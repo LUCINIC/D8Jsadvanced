@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backoffice - Il mio e-commerce</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+  
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Backoffice</h1>
+    
+    <h2>Aggiungi prodotto</h2>
+    <form id="add-product-form">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Descrizione:</label>
+        <textarea class="form-control" id="description" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="brand">Marca:</label>
+        <input type="text" class="form-control" id="brand" required>
+      </div>
+      <div class="form-group">
+        <label for="imageUrl">URL dell'immagine:</label>
+        <input type="text" class="form-control" id="imageUrl" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Prezzo:</label>
+        <input type="number" class="form-control" id="price" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Aggiungi prodotto</button>
+    </form>
+    
+    <hr>
+    
+    <h2>Modifica prodotto</h2>
+    <form id="update-product-form">
+      <div class="form-group">
+        <label for="productId">ID del prodotto:</label>
+        <input type="text" class="form-control" id="productId" required>
+      </div>
+      <div class="form-group">
+        <label for="newName">Nuovo nome:</label>
+        <input type="text" class="form-control" id="newName">
+      </div>
+      <div class="form-group">
+        <label for="newDescription">Nuova descrizione:</label>
+        <textarea class="form-control" id="newDescription" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="newBrand">Nuova marca:</label>
+        <input type="text" class="form-control" id="newBrand">
+      </div>
+      <div class="form-group">
+        <label for="newImageUrl">Nuovo URL dell'immagine:</label>
+        <input type="text" class="form-control" id="newImageUrl">
+      </div>
+      <div class="form-group">
+        <label for="newPrice">Nuovo prezzo:</label>
+        <input type="number" class="form-control" id="newPrice">
+      </div>
+      <button type="submit" class="btn btn-primary">Modifica prodotto</button>
+    </form>
+    
+    <hr>
+    
+    <h2>Elimina prodotto</h2>
+    <form id="delete-product-form">
+      <div class="form-group">
+        <label for="productIdToDelete">ID del prodotto:</label>
+        <input type="text" class="form-control" id="productIdToDelete" required>
+      </div> 
+    </form>
+
+
+      <script src="backoffice.js"></script> 
+
+  
+</body>
+    
